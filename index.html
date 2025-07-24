@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VocalForge | AI Voice Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header, footer { background: #2c3e50; color: #fff; padding: 20px 40px; text-align: center; }
+    nav { background: #34495e; padding: 10px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; }
+    .container { padding: 40px; max-width: 1200px; margin: auto; }
+    .section { margin-bottom: 60px; }
+    .card { background: #f4f4f4; padding: 20px; margin: 10px 0; border-radius: 10px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .cta-button { background: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; }
+    footer a { color: #ecf0f1; margin: 0 10px; }
+    textarea, select { width: 100%; padding: 10px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VocalForge</h1>
+  <p>Revolutionizing the way you use voice — for business, school, and fun</p>
+</header>
+
+<nav>
+  <div>
+    <strong>VocalForge</strong>
+  </div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#demo">Demo</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="container" id="home">
+  <div class="section">
+    <h2>What is VocalForge?</h2>
+    <p>VocalForge is an AI voice generator platform that transforms your written words into lifelike, expressive audio using cutting-edge neural synthesis. Whether you're a business building automated responses, a teacher creating accessible materials, or a creator making content — VocalForge gives your text a voice.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Voices</h2>
+    <div class="card">Emma – Friendly, natural British accent (great for education)</div>
+    <div class="card">Jason – Professional American male (ideal for business use)</div>
+    <div class="card">Luna – Youthful and expressive (popular for social media)</div>
+    <div class="card">Kai – Smooth and deep (excellent for podcasts and narrations)</div>
+  </div>
+
+  <div class="section">
+    <h2>Reviews</h2>
+    <div class="card">"I used VocalForge to automate my YouTube voiceovers — the quality is insanely real." — Mike, Content Creator</div>
+    <div class="card">"My students love hearing the lessons read aloud in different voices. Makes learning fun!" — Mrs. Harris, Teacher</div>
+    <div class="card">"We replaced our IVR system with this tool. Saved us thousands." — Lisa, Small Business Owner</div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@vocalforge.ai</p>
+    <p>Instagram: <a href="https://instagram.com/vocalforge" target="_blank">@vocalforge</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+  </div>
+</section>
+
+<section class="container" id="features">
+  <div class="section">
+    <h2>Features</h2>
+    <ul>
+      <li>Choose from 10+ high-quality AI voices across different accents and styles</li>
+      <li>Text-to-speech editor with adjustable tone, speed, and emotion</li>
+      <li>Downloadable audio files in MP3/WAV</li>
+      <li>Free trial: up to 10,000 words to test all features</li>
+    </ul>
+    <button class="cta-button">Try Your Free 10K Words</button>
+  </div>
+</section>
+
+<section class="container" id="demo">
+  <div class="section">
+    <h2>Try the Demo</h2>
+    <label for="voiceSelect">Choose a Voice:</label>
+    <select id="voiceSelect">
+      <option>Emma</option>
+      <option>Jason</option>
+      <option>Luna</option>
+      <option>Kai</option>
+    </select>
+    <label for="textInput">Enter Your Text (max 500 words):</label>
+    <textarea id="textInput" rows="6" placeholder="Type your message here..."></textarea>
+    <button class="cta-button" onclick="alert('This is a simulated voice output.')">Generate Voice</button>
+  </div>
+</section>
+
+<section class="container" id="pricing">
+  <div class="section">
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Monthly</h3>
+        <p><strong>$19.99/month</strong></p>
+        <ul>
+          <li>50,000 words</li>
+          <li>All voices and features</li>
+          <li>Priority support</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Yearly</h3>
+        <p><strong>$199/year</strong></p>
+        <ul>
+          <li>600,000 words/year</li>
+          <li>All voices and features</li>
+          <li>Priority support</li>
+          <li>2 months free</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top: 20px;">
+      <button class="cta-button">Sign Up Now</button>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="about">
+  <div class="section">
+    <h2>About the Tech</h2>
+    <p>VocalForge uses neural text-to-speech technology powered by deep learning to produce realistic voiceovers. Our system analyzes punctuation, sentence structure, and emphasis to create engaging audio experiences that sound human.</p>
+  </div>
+</section>
+
+<section class="container" id="faq">
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="card"><strong>Can I use it for YouTube?</strong><br>Yes! All generated voices are license-free for use in personal and commercial projects.</div>
+    <div class="card"><strong>Is there a mobile version?</strong><br>We're launching iOS and Android apps soon. Stay tuned!</div>
+    <div class="card"><strong>How do I upgrade my plan?</strong><br>Visit the Pricing section and click "Sign Up Now" to change or upgrade your plan anytime.</div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 VocalForge. All rights reserved.</p>
+  <p>
+    <a href="#home">Home</a> |
+    <a href="#features">Features</a> |
+    <a href="#pricing">Pricing</a> |
+    <a href="#about">About</a> |
+    <a href="#faq">FAQ</a> |
+    <a href="#contact">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
